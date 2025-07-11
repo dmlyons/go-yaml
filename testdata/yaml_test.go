@@ -9,8 +9,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/goccy/go-yaml"
-	"github.com/goccy/go-yaml/ast"
+	"github.com/dmlyons/go-yaml"
+	"github.com/dmlyons/go-yaml/ast"
 )
 
 func TestMarshal(t *testing.T) {
