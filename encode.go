@@ -549,7 +549,7 @@ func (e *Encoder) encodeFloat(v float64, bitSize int) ast.Node {
 		value := ".nan"
 		return ast.Nan(token.New(value, value, e.pos(e.column)))
 	}
-	value := strconv.FormatFloat(v, 'g', -1, bitSize)
+	value := strconv.FormatFloat(v, 'f', -1, bitSize)
 	if !strings.Contains(value, ".") && !strings.Contains(value, "e") {
 		if e.autoInt {
 			return ast.Integer(token.New(value, value, e.pos(e.column)))
