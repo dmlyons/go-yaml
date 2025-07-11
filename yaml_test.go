@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goccy/go-yaml"
-	"github.com/goccy/go-yaml/parser"
+	"github.com/dmlyons/go-yaml"
+	"github.com/dmlyons/go-yaml/parser"
 )
 
 func TestRoundTripWithComment(t *testing.T) {
